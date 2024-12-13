@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías El Arte de la Tradición</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Artesanías El Arte de la Tradición</h1>
+        <p>Hecho a mano con amor y dedicación</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Nuestros Productos</h2>
+            <!-- Filtro de productos -->
+            <div class="filter">
+                <button class="filter-btn" data-category="all">Ver Todos</button>
+                <button class="filter-btn" data-category="cerámica">Cerámica</button>
+                <button class="filter-btn" data-category="mimbre">Mimbre</button>
+            </div>
+            <div class="productos">
+                <div class="producto" data-category="cerámica">
+                    <img src="figura1.jpeg" alt="Producto 1">
+                    <div class="descripcion">
+                        <h3>Figura de cerámica</h3>
+                        <p>Escultura hecha a mano, ideal para decorar tu hogar.</p>
+                    </div>
+                </div>
+
+                <div class="producto" data-category="cerámica">
+                    <img src="vaso1.jpeg " alt="Producto 2">
+                    <div class="descripcion">
+                        <h3>Vaso pintado a mano</h3>
+                        <p>Vaso de cerámica con diseño único y colores vibrantes.</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="producto" data-category="mimbre">
+                    <img src="cesta.jpeg" alt="Producto 4">
+                    <div class="descripcion">
+                        <h3>Cesta de mimbre</h3>
+                        <p>Cesta tejida a mano, perfecta para decoración o uso diario.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-info">
+                <p>Para más información o consultas, puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+                <ul>
+                    <li><strong>Teléfono:</strong> +34 123 456 789</li>
+                    <li><strong>Correo Electrónico:</strong> contacto@artesaniastradicion.com</li>
+                    <li><strong>Dirección:</strong> Calle de la Artesanía, 123, Madrid, España</li>
+                </ul>
+            </div>
+
+            <div class="contacto-form">
+                <h3>Envíanos un Mensaje</h3>
+                <form action="#" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Artesanías El Arte de la Tradición. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
